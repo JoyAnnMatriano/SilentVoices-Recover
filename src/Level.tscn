@@ -1,9 +1,14 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://src/TileSet_New.meshlib" type="MeshLibrary" id=1]
 [ext_resource path="res://src/Monster.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/FlashingLights.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Level.gd" type="Script" id=5]
+
+[sub_resource type="Environment" id=1]
+background_mode = 1
+background_color = Color( 0.0980392, 0.0941176, 0.0941176, 1 )
 
 [node name="Level" type="Spatial"]
 script = ExtResource( 5 )
@@ -21,8 +26,38 @@ __meta__ = {
 "_editor_clip_": 0
 }
 
+[node name="LightContainer" type="Spatial" parent="Navigation/NavigationMeshInstance/GridMap"]
+
+[node name="FlashingLights2" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 3.92726, 5.47169, -30.7657 )
+spot_range = 14.8158
+spot_angle = 50.8163
+
+[node name="FlashingLights3" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
+transform = Transform( 0.99933, -0.00303469, -0.0364828, 0.0366088, 0.0828396, 0.99589, 0, -0.996558, 0.0828951, 12.8378, 4.57937, -21.2804 )
+spot_range = 14.8158
+spot_angle = 50.8163
+
+[node name="FlashingLights4" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
+transform = Transform( 0.999841, -0.0014771, -0.0177575, 0.0178189, 0.082882, 0.9964, 0, -0.996558, 0.0828951, 0.0927105, 7.77862, -8.74994 )
+spot_range = 14.8158
+spot_angle = 50.8163
+
+[node name="FlashingLights5" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
+transform = Transform( 0.99933, -0.00303469, -0.0364828, 0.0366088, 0.0828396, 0.99589, 0, -0.996558, 0.0828951, 15.4556, 3.29853, -5.52186 )
+spot_range = 14.8158
+spot_angle = 50.8163
+
+[node name="FlashingLights6" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 44.8802, 4.95871, -12.4888 )
+spot_range = 14.8158
+spot_angle = 50.8163
+
 [node name="Player" parent="Navigation" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1, -3 )
 
 [node name="Monster" parent="Navigation" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 59, 1, -3 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 1 )
