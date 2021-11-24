@@ -8,7 +8,7 @@
 
 [sub_resource type="Environment" id=1]
 background_mode = 1
-background_color = Color( 0.0980392, 0.0941176, 0.0941176, 1 )
+background_color = Color( 0.172549, 0.105882, 0.121569, 1 )
 
 [node name="Level" type="Spatial"]
 script = ExtResource( 5 )
@@ -27,29 +27,65 @@ __meta__ = {
 }
 
 [node name="LightContainer" type="Spatial" parent="Navigation/NavigationMeshInstance/GridMap"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0131569, -1.90735e-06, -0.0443621 )
 
-[node name="FlashingLights2" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 3.92726, 5.47169, -30.7657 )
+[node name="FL1" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
+transform = Transform( 0.999768, 9.41355e-10, -0.0215357, 0.0215357, -4.37013e-08, 0.999768, 0, -1, -4.37114e-08, 32.4385, 3.74493, -2.67086 )
 spot_range = 14.8158
 spot_angle = 50.8163
 
-[node name="FlashingLights3" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
-transform = Transform( 0.99933, -0.00303469, -0.0364828, 0.0366088, 0.0828396, 0.99589, 0, -0.996558, 0.0828951, 12.8378, 4.57937, -21.2804 )
+[node name="FL2" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
+transform = Transform( 0.99933, -0.00303469, -0.0364828, 0.0366088, 0.0828396, 0.99589, 0, -0.996558, 0.0828952, 14.1986, 3.60714, -22.2002 )
 spot_range = 14.8158
 spot_angle = 50.8163
 
-[node name="FlashingLights4" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
-transform = Transform( 0.999841, -0.0014771, -0.0177575, 0.0178189, 0.082882, 0.9964, 0, -0.996558, 0.0828951, 0.0927105, 7.77862, -8.74994 )
+[node name="FL3" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
+transform = Transform( 0.999841, -0.0014771, -0.0177576, 0.0178189, 0.082882, 0.9964, 0, -0.996558, 0.0828952, 4.10622, 4.72222, -9.44433 )
 spot_range = 14.8158
 spot_angle = 50.8163
 
-[node name="FlashingLights5" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
-transform = Transform( 0.99933, -0.00303469, -0.0364828, 0.0366088, 0.0828396, 0.99589, 0, -0.996558, 0.0828951, 15.4556, 3.29853, -5.52186 )
+[node name="FL4" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
+transform = Transform( 0.99933, -0.00303469, -0.0364828, 0.0366088, 0.0828396, 0.99589, 0, -0.996558, 0.0828952, 24.2826, 3.01331, -11.3592 )
 spot_range = 14.8158
 spot_angle = 50.8163
 
-[node name="FlashingLights6" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 44.8802, 4.95871, -12.4888 )
+[node name="FL5" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 42.655, 3.65173, -10.7994 )
+spot_range = 14.8158
+spot_angle = 50.8163
+
+[node name="FL6" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 18.5193, 3.62409, -22.7846 )
+spot_range = 14.8158
+spot_angle = 50.8163
+
+[node name="FL7" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 2.78268, 3.61762, -32.5053 )
+spot_range = 14.8158
+spot_angle = 50.8163
+
+[node name="FL8" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 14.4642, 3.53508, -1.90208 )
+spot_range = 14.8158
+spot_angle = 50.8163
+
+[node name="FL9" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 25.1607, 5.07364, -39.3618 )
+spot_range = 14.8158
+spot_angle = 50.8163
+
+[node name="FL10" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 3.21602, 2.485, -46.701 )
+spot_range = 14.8158
+spot_angle = 50.8163
+
+[node name="FL11" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
+transform = Transform( 0.999768, 9.41355e-10, -0.0215357, 0.0215357, -4.37013e-08, 0.999768, 0, -1, -4.37114e-08, 2.89343, 3.46658, -17.664 )
+spot_range = 14.8158
+spot_angle = 50.8163
+
+[node name="FL12" parent="Navigation/NavigationMeshInstance/GridMap/LightContainer" instance=ExtResource( 4 )]
+transform = Transform( 0.999768, 9.41355e-10, -0.0215357, 0.0215357, -4.37013e-08, 0.999768, 0, -1, -4.37114e-08, 50.5932, 2.91188, -21.8865 )
 spot_range = 14.8158
 spot_angle = 50.8163
 
@@ -58,6 +94,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1, -3 )
 
 [node name="Monster" parent="Navigation" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 59, 1, -3 )
+
+[node name="Monster2" parent="Navigation" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 37.28, 0.941828, -27.0683 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource( 1 )
